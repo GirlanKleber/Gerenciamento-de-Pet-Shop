@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+section {
+  background-color: #FFFFFF;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+h2, h3 {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+button.edit,
+button.del {
+  padding: 5px 10px;
+  font-size: 0.85em;
+  margin-right: 5px;
+}
+
+button.edit {
+  background-color: #2196F3;
+}
+
+button.edit:hover {
+  background-color: #1976D2;
+}
+
+button.del {
+  background-color: #e74c3c;
+}
+
+button.del:hover {
+  background-color: #c0392b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 0.95em;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f7fc;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  form label {
+    font-size: 0.9em;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 0.85em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
